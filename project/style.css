@@ -1,0 +1,45 @@
+body{
+    direction: rtl;
+    font-size: 14px;
+    font-family: IRANSans;
+    text-align: justify;
+}
+#header{
+    text-align: center;
+}
+#sidebar{
+    min-height: 200px;
+    float: right;
+    width: 25%;
+}
+#main-content{
+    min-height: 200px;
+    float: left;
+    width: 75%;
+}
+#footer{
+    background-color: lightsteelblue;
+    width: 100%;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+#name{
+    background-color: aquamarine;
+    min-height: 200px;
+    float: right;
+    width: 35%;
+}
+#email{
+    background-color: burlywood;
+    min-height: 200px;
+    float: right;
+    width: 35%;
+}
+#number{
+    background-color: darkgray;
+    min-height: 200px;
+    float: left;
+    width: 30%;
+}
