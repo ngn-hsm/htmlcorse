@@ -3,6 +3,17 @@ body{
     font-size: 14px;
     font-family: IRANSans;
     text-align: justify;
+    background-color:hsl(0,0%,94%);
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #787878;
+}
+#point{
+    list-style-type: none;
 }
 #header{
     text-align: center;
@@ -18,7 +29,6 @@ body{
     width: 75%;
 }
 #footer{
-    background-color: lightsteelblue;
     width: 100%;
     text-align: center;
 }
@@ -26,20 +36,57 @@ body{
     clear: both;
 }
 #name{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     min-height: 200px;
     float: right;
     width: 35%;
 }
 #email{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     min-height: 200px;
     float: right;
     width: 35%;
 }
 #number{
-    background-color: darkgray;
+    /* background-color: darkgray; */
     min-height: 200px;
     float: left;
     width: 30%;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(168,111,163);
+}
+#ul{
+    margin: 0%;
+    padding: 0%;
+    background-color: #555555;
+    overflow: hidden;
+    list-style-type: none;
+    font-size: 20px;
+}
+.li{
+    float: left;
+}
+.li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.li a:hover{
+    background-color: #111111;
+    color: rgb(168,111,163);
+}
+.image{
+    padding: 40px;
+    margin: 80px;
+    border: 1px solid #ddd6d6;
+    box-shadow: 0px 0px 30px;
+}
+.shadow{
+    padding: 20px;
+    box-shadow: 0px 0px 10px;
 }
