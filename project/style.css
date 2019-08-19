@@ -22,11 +22,18 @@ a{
     min-height: 200px;
     float: right;
     width: 25%;
+    padding: 1px;
 }
 #main-content{
     min-height: 200px;
     float: left;
     width: 75%;
+}
+.image-main-content{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  min-height: 300px;
 }
 #footer{
     width: 100%;
@@ -55,7 +62,8 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    padding: 0px 10px;
+    font-size: 16px;
     color: rgb(168,111,163);
 }
 #ul{
@@ -75,19 +83,24 @@ a:hover{
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    font-size: 20px;
 }
 .li a:hover{
     background-color: #111111;
     color: rgb(168,111,163);
 }
 .image{
-    padding: 40px;
-    margin: 80px;
-    border: 1px solid #ddd6d6;
-    box-shadow: 0px 0px 30px;
-    border-radius: 10px;
+  width: 20%;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+    /* border: 1px solid #ddd6d6; */
+}
+.image:hover{
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  border-radius: 20px;
 }
 .shadow{
     padding: 20px;
-    box-shadow: 0px 0px 10px;
+    margin-top: 20px;
 }
