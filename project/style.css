@@ -62,8 +62,8 @@ a{
 }
 
 a:hover{
-    padding: 0px 10px;
-    font-size: 16px;
+    padding: 0px 5px;
+    font-size: 15px;
     color: rgb(168,111,163);
 }
 #ul{
@@ -99,8 +99,9 @@ a:hover{
 .image:hover{
   box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
   border-radius: 20px;
+  transition: box-shadow .4s ease;
 }
 .shadow{
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 20px auto;
 }
