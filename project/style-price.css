@@ -10,16 +10,12 @@ body{
 }
 a{
     text-decoration: none;
+    color: #222222;
 }
 .clear{
     clear: both;
 }
-#product-gallery a{
-    color: #222222;
-}
-#product-gallery .product-title:hover{
-    color: #666666;
-}
+
 .container{
     width: 1170px;
     min-height: 300px;
@@ -35,8 +31,6 @@ a{
     margin: 10px 5px;
     padding: 5px;
     float: right;
-    transition:all 2s ease;
-    position: relative;
 
 }
 #product-gallery li:hover{
@@ -48,43 +42,48 @@ a{
 #product-gallery{
     width: 100%;
     display: block;
-    
-    
 }
 #product-gallery .product-item{
     padding: 5px;
     text-align: center;
     position: relative;
-  
+    min-height: 350px;
+    transition:all 2s ease;
+    position: relative;
+    min-height: 300px;
 }
 #product-gallery .product-img{
     margin: 10px auto;
 }
 #product-gallery .product-title{
     margin: 10px auto;
+    display: inline-block;
+    float: none;
+}
+#product-gallery .product-title:hover{
+    color: #666666;
+    cursor: pointer;
 }
 #product-gallery .product-price{
     color: red;
-    margin-bottom: 35px;
-    margin-top: 10px;
+    margin: 10px auto;
     padding: 5px;
 }
-#product-gallery .add-to-cart{
+.btn{
     border: 1px solid rgb(105, 139, 89);
     background-color: rgb(105, 139, 89);
     color: white;
-    padding:5px 15px;
-    margin: 5px auto;
+    padding:5px 15px  10px;
+    margin: 10px auto;
     display: inline-block;
     border-radius: 5px;
     position: absolute;
     left:15%;
     bottom: 0px;
 }
-#product-gallery .add-to-cart:hover{
+.btn:hover{
     background-color: beige;
     color: rgb(105, 139, 89);
-  font: 9pt tahoma;
 }
 #product-gallery span{
     background-color: red;
