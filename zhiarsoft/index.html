@@ -6,10 +6,10 @@
 <script src="https://www.google-analytics.com/analytics.js" async=""></script>
 <script>
     (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-12871245-1', 'auto');
     ga('send', 'pageview');
@@ -23,10 +23,19 @@
     <link href="static/bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
     <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    
+
 </head>
 
 <body>
+    <span id="cart-container-float" class="colxs-12 shoppingcart-container col-sm-2">
+        <div class="center">
+            <a href="/">
+            <span id="cart">سبد خرید(0) کالا</span>
+            </a>
+            <div class="clear">جمع کل:0 تومان</div>
+            <div class="clear" style="height: 5px"></div>
+        </div>
+    </span>
     <div class="header">
         <div class="container">
             <!-- ::before -->
@@ -84,79 +93,537 @@
             <!-- ::after -->
         </div>
     </div>
-</header>
-<nav id="main-menu" class="navbar" role="navigation">
-    <!-- ::before -->
-    <div class="container">
+    </header>
+    <nav id="main-menu" class="navbar" role="navigation">
         <!-- ::before -->
-        <div class="navbar-header">
+        <div class="container">
             <!-- ::before -->
-            <button class="btn btn-navbar navbar-toggle" data-target=".navbar-cat-collapse" data-toggle="collapse" type="button">
+            <div class="navbar-header">
+                <!-- ::before -->
+                <button class="btn btn-navbar navbar-toggle" data-target=".navbar-cat-collapse" data-toggle="collapse"
+                    type="button">
                     <span class="sr-only">منو</span>
                     <i class="fa fa-bars fa-2x"></i>
                 </button>
                 <!-- ::after -->
-        </div>
-        <div class="collapse navbar-cat-collapse navbar-collapse">
-            <!-- ::before -->
-            <ul class="nav navbar-nav">
+            </div>
+            <div class="collapse navbar-cat-collapse navbar-collapse">
                 <!-- ::before -->
-                <li><a href="/">مقالات آموزشی</a></li>
-                <li><a href="/">جدیدترین ویدیوها</a></li>
-                <li><a href="/">محبوب ترین ویدیوها</a></li>
-                <li><a href="/">پرداخت اینترنتی</a></li>
-                <li><a href="/">سبد خرید</a></li>
-                <li><a href="/">اپلیکیشن آندرویدی</a></li>
+                <ul class="nav navbar-nav">
+                    <!-- ::before -->
+                    <li><a href="/">مقالات آموزشی</a></li>
+                    <li><a href="/">جدیدترین ویدیوها</a></li>
+                    <li><a href="/">محبوب ترین ویدیوها</a></li>
+                    <li><a href="/">پرداخت اینترنتی</a></li>
+                    <li><a href="/">سبد خرید</a></li>
+                    <li><a href="/">اپلیکیشن آندرویدی</a></li>
+                    <!-- ::after -->
+                </ul>
                 <!-- ::after -->
-            </ul>
+            </div>
             <!-- ::after -->
         </div>
         <!-- ::after -->
-    </div>
-    <!-- ::after -->
-</nav>
-<div class="main-container container">
-    <!-- ::before -->
-    <section class="products-list">
-        <div class="container">
-            <!-- ::before -->
-            <div class="row">
+    </nav>
+    <div class="main-container container">
+        <!-- ::before -->
+        <section class="products-list">
+            <div class="container">
                 <!-- ::before -->
-                <h2 class="heading-with-border">ویدیوهای منتخب</h2>
-                <div class="clear" style="height: 15px"></div>
-                <div class="col-sm-3 col-xs-12">
-                    <div class="product-col" itemprop="" itemtype="http://schema.org/product">
-                        <meta itemprop="name" content="موی تای-تکنیک های پایه"></meta>
-                        <div class="product-picture">
-                        <a href="/"><img class="img-responsive" itemprop="image" src="img/thumbnail.ashx.jpg" /></a>
-                        </div>
-                        <h3 class="product-title">
-                            <a href="/">موی تای-تکنیک های پایه</a>
-                        </h3>
-                        <div class="product-price">
-                            <span>7.000 تومان</span>
-                            <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="IRR"><meta itemprop="price" content="70000">
-                            </span>
-                        </div>
-                        <div class="cart-button button-group add-to-cart-container">
-                        <button class="btn btn-cart add-to-cart" type="button">
-                            <i class="fa fa-shopping-cart">
-                                <!-- ::before -->
-                            </i>
-                            اضافه به سبد خرید
-                        </button>
+                <div class="row">
+                    <!-- ::before -->
+                    <h2 class="heading-with-border">ویدیوهای منتخب</h2>
+                    <div class="clear" style="height: 15px"></div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">موی تای-تکنیک های پایه</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
 
-                        <span class="more-info"></span>
+                                <span class="more-info"></span>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx1.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">تمرینات کونگ فو با سلاح و بدون سلاح</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx2.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">تمرین و کشش</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx3.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">آموزش پا باز (۱۸۰ درجه)</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx4.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">فول کنتاکت از مبتدی تا پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx5.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">آموزش ضربات پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx6.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">ضربات آکروباتیک</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx7.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">آموزش کومبو - ضربات پای ترکیبی</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx8.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">نانچیکو</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx9.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">۷۷ ضربه پا</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx10.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">تونفا- کبری</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx11.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">آموزش نانچیکو</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx12.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">جوجیتسوی برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx13.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">جوجیتسو برزیلی- ترکیبات قلاب هنرهای رزمی</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx14.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">جوجیتسوی برزیلی- BERIMBOLO - CROSS-FACE</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemprop="" itemtype="http://schema.org/product">
+                            <meta itemprop="name" content="موی تای-تکنیک های پایه">
+                            </meta>
+                            <div class="product-picture">
+                                <a href="/"><img class="img-responsive" itemprop="image"
+                                        src="img/thumbnail.ashx15.jpg" /></a>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="/">جوجیتسوی برزیلی- تکنیک های پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>7.000 تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="IRR">
+                                    <meta itemprop="price" content="70000">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                        <!-- ::before -->
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear" style="height: 5px;"></div>
+                    <div class="clear" style="height: 30px;"></div>
+                    <h2 class="heading-with-border">آخرین مطالب وبلاگ</h2>
+                    <div class="clear" style="height: 15px;"></div>
+
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-</div>
+    </div>
 </body>
 
 </html>
