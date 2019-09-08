@@ -55,6 +55,7 @@ a:hover{
     position: absolute;
     top: 10px;
     left: 10px;
+    color: white;
 }
 #logo .img-responsive{
     margin-top: 80px;
