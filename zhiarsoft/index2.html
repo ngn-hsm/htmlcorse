@@ -18,6 +18,22 @@
     <link href="static/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 
+    <link href="static/slider/themes/default/default.css" rel="styleheet" />
+    <link href="static/slider/nivo-slider.css" rel="stylesheet" />
+    <script src="static/jquery/jquery-1.9.0.min.js"></script>
+    <script src="static/slider/jquery.nivo.slider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').nivoSlider({ 
+                controlNav:false,
+                directionNav:false,
+                pauseOnHover:false,
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
@@ -119,6 +135,20 @@
         </div>
         <!-- ::after -->
     </nav>
+<div class="clear"></div>
+    <div class="slider-wrapper  hidden_xs">
+        <div id="slider" class="nivoSlider theme-default">
+            <a class="nivo-imagelink" href="#">
+                <img src="img/slider2.jpg" style="width: 1349px;" />
+            </a>
+            <a class="nivo-imagelink" href="#">
+                <img src="img/slider3.jpg" style="width: 1349px;" />
+            </a>
+            <a class="nivo-imagelink" href="#">
+                <img src="img/slider4.jpg" style="width: 1349px;" />
+            </a>
+        </div>
+    </div>
 
     <div class="main-container container">
         <!-- ::before -->

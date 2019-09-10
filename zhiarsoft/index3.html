@@ -18,6 +18,21 @@
     <link href="static/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="window.slider.css"/>
+    <script src="static/jquery/jquery-1.9.0.min.js"></script>
+    <style>
+            body { background-color: #fafafa; }
+            h1 { margin: 150px auto 60px auto; text-align: center; }
+            .jquery-script-center{
+                margin-right: 750px;
+
+            }
+
+          </style>
+        
+
+
 </head>
 
 <body>
@@ -120,6 +135,34 @@
         <!-- ::after -->
     </nav>
 
+<div class="jquery-script-center">
+    <div id="slider-1" class="window-slider">
+            <!-- TOP LEFT SLIDER -->
+            <div class="tl-window">
+              <img src="https://source.unsplash.com/400x250/?nature">
+              <img src="https://source.unsplash.com/400x250/?fitness">
+            </div>
+  
+            <!-- TOP RIGHT SLIDER -->
+            <div class="tr-window">
+              <img src="https://source.unsplash.com/400x250/?people">
+              <img src="https://source.unsplash.com/400x250/?beauty">
+            </div>
+  
+            <!-- BOTTOM LEFT SLIDER -->
+            <div class="bl-window">
+              <img src="https://source.unsplash.com/400x250/?water">
+              <img src="https://source.unsplash.com/400x250/?girl">
+            </div>
+  
+            <!-- BOTTOM RIGHT SLIDER -->
+            <div class="br-window">
+              <img src="https://source.unsplash.com/400x250/?future">
+              <img src="https://source.unsplash.com/400x250/?game">
+            </div>
+        </div>
+</div>
+  
     <div class="main-container container">
         <!-- ::before -->
         <section class="products-list">
@@ -886,6 +929,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="window.slider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#slider-1').windowSlider();
+        });
+    </script>
 
 </body>
 
