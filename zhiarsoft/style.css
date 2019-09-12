@@ -104,6 +104,7 @@ a:hover{
         padding: 10px 0 8px;
         color: #1c1c1c;
         font-family: IRANSans;
+        z-index: 200;
     }
     .navbar-collapse{
         padding-right: 0px !important;
@@ -204,28 +205,45 @@ a:hover{
     .footer-links{
         background: url('img/header-bg.jpg') no-repeat 0 0 ;
         padding: 30px 0px 40px;
+        font-family: IRANSans;
+
     }
     .footer-links h5{
         margin-bottom: 20px;
         font-size: 18px;
+        font-family: IRANSans !important;
     }
    
     .footer-links, .footer-links li, .footer-links li a, .footer-links li a:hover, .footer-links h4, .footer-links h5{
         color: #fff;
+        font-weight: 400;
     }
     .footer-links ul{
         list-style: outside none none;
         margin: 0;
         padding: 0;
+        font-size: 12px;
+        margin-bottom: 15px
+
+    }
+    .footer-links p{
+        font-family: IRANSans;
+        font-size: 11px;
     }
     footer a:hover{
     color: #31A1B9 !important;
     background-color: #ddf2f7;
     padding: 5px;
     }
+    footer a{
+        font-family: IRANSans;
+        margin-bottom: 15px
+s    }
     .copyright{
         background: #1c1c1c none repeat scroll 0 0;
         color: white;
         padding: 18px 0px 8px;
     }
+
+
 
