@@ -205,8 +205,9 @@ a:hover{
     }
     .footer-links{
         background: url('img/header-bg.jpg') no-repeat 0 0 ;
-        padding: 30px 0px 40px;
+        padding: 30px 0px 40px !important;
         font-family: IRANSans;
+        font-size: 11px;
 
     }
     .footer-links h5{
@@ -217,7 +218,6 @@ a:hover{
    
     .footer-links, .footer-links li, .footer-links li a, .footer-links li a:hover, .footer-links h4, .footer-links h5{
         color: #fff;
-        font-weight: 400;
     }
     .footer-links ul{
         list-style: outside none none;
@@ -234,11 +234,11 @@ a:hover{
     footer a:hover{
     color: #31A1B9 !important;
     background-color: #ddf2f7;
-    padding: 5px;
+    padding: 4px;
     }
     footer a{
         font-family: IRANSans;
-        margin-bottom: 15px
+        margin-bottom: 20px
    }
     .copyright{
         background: #1c1c1c none repeat scroll 0 0;
