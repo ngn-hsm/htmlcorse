@@ -1,0 +1,98 @@
+*{
+    direction: rtl;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-size: 14px;
+    font-family: IRANSans;
+    text-align: justify;
+    line-height: 26px;
+    color: #666;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.common-home .typeheader-1{
+    margin-bottom: 30px;
+}
+.typeheader-1 {
+    background-color: #232f3e;
+    min-height: 200px;
+}
+.typeheader-1 .header-middle {
+    padding: 50px 0 22px 0;
+}
+.typeheader-1 .container-megamenu.horizontal ul.megamenu > li > a {
+    line-height: 100%;
+}
+.container-megamenu.horizontal ul.megamenu > li {
+    float: right;
+    margin-right: 30px;
+}
+.container-megamenu.horizontal ul.megamenu > li > a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    position: relative;
+    padding: 15px 0;
+    line-height: 100%;
+    height: auto;
+}
+a:hover, a:focus {
+    color: #ff3c20;
+    text-decoration: none;
+}
+.telephone a:hover, a:focus{
+    color: #fff;
+}
+ul li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+    width: auto;
+    margin-left: 20px;
+
+}
+.middle-left ul li{
+    padding-right: 40px;
+}
+.main-menu{
+    padding-top: 10px;
+}
+.span-new span{
+    position: absolute;
+    top: -25px;
+    right: 10%;
+    height: auto;
+}
+.span-hot span{
+    position: absolute;
+    top: -25px;
+    right:22%;
+}
+ul.megamenu > li > a img {
+    vertical-align: middle;
+}
+.megamenu-wrapper {
+    display: block !important;
+}
+.megamenu-wrapper {
+    position: relative;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: transparent;
+}
+.fa{
+    padding: 3px;
+    color: #fff;
+}
