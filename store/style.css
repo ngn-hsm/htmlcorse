@@ -16,7 +16,7 @@ body{
 a{
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: white;
 }
 .common-home .typeheader-1{
     margin-bottom: 30px;
@@ -27,6 +27,34 @@ a{
 }
 .typeheader-1 .header-middle {
     padding: 50px 0 22px 0;
+}
+header ul.megamenu > li > a {
+
+    text-shadow: unset;
+
+}
+.container-megamenu ul.megamenu li .sub-menu .content {
+
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+}
+ul.megamenu li .sub-menu .content {
+
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+
 }
 .typeheader-1 .container-megamenu.horizontal ul.megamenu > li > a {
     line-height: 100%;
@@ -94,5 +122,69 @@ ul.megamenu > li > a img {
 }
 .fa{
     padding: 3px;
-    color: #fff;
+    color:white;
+}
+.typeheader-1 #sosearchpro .search .select_category {
+
+    border: none;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: medium;
+    border-right: 1px solid #d7d7d7;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 22%;
+
+}
+#sosearchpro .bottom2 .select_category {
+
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background: white !important;
+        background-color: white !important;
+
+}
+.typeheader-1 #sosearchpro .search .select_category select {
+
+    height: 40px;
+    line-height: 40px;
+    color: #666 !important;
+    font-size: 12px;
+    padding: 0 15px;
+}
+#sosearchpro .select_category select {
+
+    height: 40px;
+    width: 100%;
+    line-height: 100%;
+    padding: 0 5px;
+    border: none;
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+element {
+
+    width: 100%;
+
+}
+.chosen-container {
+
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
