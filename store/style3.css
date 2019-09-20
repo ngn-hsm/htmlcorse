@@ -46,14 +46,14 @@ ul.megamenu li{
     position: relative;
 }
 ul.megamenu li a:hover{
-    color: red;
+    color: #ff3c20;
 }
 .fa{
     padding: 5px;
-    color: white;
+    color:#ff3c20;
 }
 .signin-link a:hover{
-    color: red;
+    color: #ff3c20;
 }
 .telephone a:hover{
     color: white;
@@ -91,3 +91,41 @@ ul.megamenu li a:hover{
     left: 20px;
     color: white;
 }
+#sosearchpro .search button {
+    right: 0;
+    bottom:0px;
+    height: 34px;
+    text-align: center;
+    line-height: 10px;
+    padding: 1px 35px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 0;
+    border: 1px solid #ff3c20;
+    background: #ff3c20;
+}
+#sosearchpro .search button .fa{
+    color: white;
+}
+#sosearchpro .select_category{
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background: white;
+    outline: none;
+    text-align: center;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border:none;
+}
+.bottom2{
+    margin-right:10px; 
+}
+
+
