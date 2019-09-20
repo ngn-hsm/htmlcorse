@@ -140,7 +140,7 @@ ul.megamenu li a:hover{
     line-height: 40px;
     color: #666;
     font-size: 12px;
-    padding: 0 15px;
+    padding: 0 4px;
 
 }
 #sosearchpro .select_category select {
@@ -158,13 +158,22 @@ ul.megamenu li a:hover{
     appearance: none;
 
 }
+#sosearchpro .select_category::after{
+    content: "\f0d7";
+    font-family: fontawesome;
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color:#666;
+}
 option {
 
     padding: 2px 5px;
     border-width: 1px;
 
 }
-.typeheader-1 #sosearchpro .search .select_category select {
+#sosearchpro .search .select_category select {
 
     line-height: 40px;
     color: #666;
@@ -241,7 +250,7 @@ a, a:visited, a:active, a:link, a:focus {
 
     display: block;
     overflow: hidden;
-    margin-right: 26px;
+    margin-right: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
 
@@ -327,7 +336,7 @@ header #sosearchpro .search .chosen-container input {
     background-color: #fff;
     z-index: 0;
     height: 40px;
-    padding-left: 20px;
+    padding-left: 0px;
     font-size: 12px;
     width: 100%;
     background-color: #fff;
