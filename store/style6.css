@@ -31,7 +31,7 @@ a:hover{
     width: 100%;
 }
 .header .container{
-    margin-right: 80px;
+    margin-right: 60px;
     margin-left: 20px;
 }
 .header-top{
@@ -732,12 +732,12 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
 }
 #cssmenu {
     padding: 0;
-    margin-right: 10px;
+    margin-right: 50px;
     border: 0;
     line-height: 1;
 }
 #cssmenu > ul, #cssmenu {
-    width: 100% !important;
+    width: 90% !important;
 }
 #cssmenu ul {
     position: relative;
@@ -802,7 +802,7 @@ img{
     margin-right:0;
 }
 .banner img{
-    max-width:116%;
+    max-width:97%;
     vertical-align: middle;
     display:inline;
 }
@@ -955,7 +955,18 @@ margin-top:15px;
     padding: 0;
     margin-bottom: 5px;
 }
-
+span.fa-stack .fa-stack-2x {
+    font-size: 11px;
+    color:#666;
+    
+   }
+span.fa-stack {
+    width: 14px;
+    height: 11px;
+    line-height: 10px;
+    font-size: 12px;
+    margin-bottom:15px;
+}
 
 
 
