@@ -802,7 +802,7 @@ img{
     margin-right:0;
 }
 .banner img{
-    max-width:113%;
+    max-width:116%;
     vertical-align: middle;
     display:inline;
 }
@@ -864,7 +864,7 @@ z-index: 99;
 }
 
 .grade-wrapper img{
-    max-width:120%;
+    max-width:80%;
 }
 .product-info .product-title {   
  padding-bottom:20px;
