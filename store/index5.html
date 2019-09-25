@@ -20,8 +20,36 @@
     <link href="static/slick/slick.css" rel="stylesheet" />
     <link href="static/slick/slick-theme.css" rel="stylesheet" />
 
+    <link href="static/slider/themes/default/default.css" rel="stylesheet" />
+    <link href="static/slider/nivo-slider.css" rel="stylesheet" />
     <script src="static/jquery/jquery-1.9.0.min.js"></script>
+    <script src="static/slider/jquery.nivo.slider.js"></script>
     <script src="static/slick/slick.js"></script>
+
+
+
+
+
+    <script>
+        $(window).load(function () {
+            $('#slider').nivoSlider({ controlNav: false, controlNavThumbs: true });
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('.new-product').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: "#prev-button",
+                nextArrow: "#next-button",
+                rtl: true
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
@@ -465,7 +493,7 @@
 
 
                     <div class="bottom2 col-lg-6 col-md-5 col-sm-6">
-                        <div class="search-header-w">
+                        <div class="search-header-w" style="margin-right: 20px;">
                             <div class="icon-search hidden-lg hidden-md hidden-sm"><i class="fa fa-search"></i></div>
 
                             <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
@@ -719,32 +747,169 @@
 
                         </div>
                     </div>
-                
 
-                <div class="bottom3 col-lg-3 col-md-2 col-sm-3">
-                    <div class="like"><a href="#"></a>
-                    <i class="fa fa-heart fa-2x"></i>
+
+                    <div class="bottom3 col-lg-3 col-md-2 col-sm-3">
+                        <div class="like"><a href="#"></a>
+                            <i class="fa fa-heart fa-2x"></i>
+                        </div>
+                    </div>
+
                 </div>
-                </div>	
 
-            </div>
+                <div class="chain col-lg-3 col-md-2 col-sm-3">
+                    <div class="chain-right">
+                        <i class="fa fa-chain fa-2x"></i>
+                    </div>
+                    <div class="chain-left"><i class="fa fa-chain fa-2x"></i></div>
 
-            <div class="chain col-lg-3 col-md-2 col-sm-3">
-                <div class="chain-right">
-                <i class="fa fa-chain fa-2x"></i>
-            </div>
-                <div class="chain-left"><i class="fa fa-chain fa-2x"></i></div>
-
-            </div>
-
-
-
-
+                </div>
             </div>
         </div>
     </div>
 
-    </div>
+
+
+    <div id="content">
+        <div class="container">
+            <div class="row content-main-w">
+                <div class="col-sm-3 col-xs-12 pull-right">
+                    <div class="sidebar-widget hidden-xs">
+                        <div id="cssmenu">
+                            <ul id="categories">
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=57"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-gift"></i>هدایا و اسباب
+                                            بازی</strong>
+                                        <b class="fa fa-angle-left"></b>
+                                    </a>
+                                    
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=25"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-plug"></i>الکترونیک</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=34"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-gitlab"></i>مد و تجهیزات
+                                            جانبی</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=33"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-shopping-bag"></i>کیف و
+                                            کفش</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=33"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-video-camera"></i>دوربین
+                                            فیلمبرداری</strong>
+                                        <b class="fa fa-angle-left"></b>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=67"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-bath"></i>حمام</strong>
+                                        <b class="fa fa-angle-left"></b>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=33"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-heartbeat"></i>سلامت و زیبایی</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=80"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-bullseye"></i>خانه و
+                                            روشنایی</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="http://opencart.opencartworks.com/themes/so_emarket/layout12/index.php?route=product/category&amp;path=79"
+                                        class="clearfix">
+                                        <strong><i class="fa fa-tint"></i>متالوژی</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="" class="clearfix">
+                                        <strong><i class="fa fa-bed"></i>اتاق خواب</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <a href="" class="clearfix">
+                                        <strong><i class="fa fa-industry"></i>بخش
+                                            صنعتی</strong>
+                                    </a>
+                                </li>
+
+                                <li class="has-sub">
+                                    <div class="plus-square">
+                                        <a class="clearfix" href="/university-lectures">
+                                            <strong style="color: #ff3c20;"><i class="fa fa-plus-square"
+                                                    style="color: #ff3c20;"></i>دسته بندي بيشتر</strong>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <a href="#"><img class="banner4" src="img/banner4.jpg" /></a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-9 col-xs-12">
+                    <div class="col-sm-9 col-xs-12">
+                        <div class="slider-wrapper theme-default">
+                        <div id="slider" class="nivoSlider">
+                            <a href="#"><img src="img/slider-1-950x450.jpg" alt="" /></a>
+                            <a href="#"><img src="img/slider-2-950x450.jpg" alt="" /></a>
+                            <a href="#"><img src="img/slider-3-950x450.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="banner">
+                            <a href="#"><img class="b-img1" src="img/banner1.jpg" width="300px" /></a>
+                            <div class="clear" style="width: 30px;"></div>
+                            <a href="#"><img class="b-img2" src="img/banner2.jpg" width="300px" /></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9 col-xs-12">
+                        <a href="#"><img class="banner3" src="img/banner3.jpg" width="935px;" /></a>
+                    </div>
+
+                </div>
+
+
+
 </body>
 
 </html>

@@ -11,7 +11,7 @@ body{
     text-align: justify;
     line-height: 26px;
     color: #666;
-    overflow: auto;
+    overflow-x:hidden;
 
 }
 .clear{
@@ -30,6 +30,10 @@ a:hover{
     background-color: #232f3e;
     width: 100%;
 }
+.header .container{
+    margin-right: 80px;
+    margin-left: 20px;
+}
 .header-top{
     padding-top:60px; 
 }
@@ -38,7 +42,6 @@ a:hover{
     margin-top: 10px;
 }
 .header-link{
-    margin-right: 100px;
     font-size: 16px;
 }
 li{
@@ -73,12 +76,15 @@ ul.megamenu li a:hover{
 .all-category{
     border: 1px solid #ff3c20;
     background-color: #ff3c20;
-    padding: 6px 5px 7px 40px;
+    padding: 6px 10px 7px 40px;
     width: 20%;
     text-align: center;
     border-radius: 5px 5px 0px 0px;
     position: relative;
     font-size: 17px;
+}
+.all-category a:hover{
+    color: white;
 }
 .all-category::before{
     content: "\f0c9";
@@ -94,8 +100,8 @@ ul.megamenu li a:hover{
     font-family: fontawesome;
     font-size: 12px;
     position: absolute;
-    top: 6px;
-    left: 40px;
+    top: 7px;
+    left: 15px;
     color: white;
 }
 
@@ -129,10 +135,6 @@ ul.megamenu li a:hover{
     text-transform: uppercase;
 }
 .main-menu .header-link .container .menu-list > ul >li >a {
-    color: #666;
-    font-size: 11px;
-}
-.main-menu .header-link .container .menu-page > ul >li >a {
     color: #666;
     font-size: 11px;
 }
@@ -682,7 +684,7 @@ header .dropdown-menu {
 .chain-right::before{
     content: "\f111";
     font-family: fontawesome;
-    font-size: 10px;
+    font-size: 9px;
     position: absolute;
     top: -13px;
     right: 14px;
@@ -691,7 +693,7 @@ header .dropdown-menu {
 .chain-right::after{
     content: "\f111";
     font-family: fontawesome;
-    font-size: 10px;
+    font-size: 9px;
     position: absolute;
     top: -13px;
     right: 200px;
@@ -700,7 +702,7 @@ header .dropdown-menu {
 .chain-left::before{
     content: "\f111";
     font-family: fontawesome;
-    font-size: 10px;
+    font-size: 9px;
     position: absolute;
     bottom: -11px;
     right:-175px;
@@ -710,9 +712,175 @@ header .dropdown-menu {
 .chain-left::after{
     content: "\f111";
     font-family: fontawesome;
-    font-size: 10px;
+    font-size: 9px;
     position: absolute;
     bottom: -11px;
     left: 15px;
     color: #232f3e;
 }
+
+
+
+
+
+#content .container{
+    margin-right:40px;
+    margin-left:40px;
+}
+#categories{
+box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+#cssmenu {
+    padding: 0;
+    margin-right: 10px;
+    border: 0;
+    line-height: 1;
+}
+#cssmenu > ul, #cssmenu {
+    width: 100% !important;
+}
+#cssmenu ul {
+    position: relative;
+    z-index: 597;
+    float: right;
+}
+#cssmenu ul, #cssmenu ul li, #cssmenu ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cssmenu ul li {
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+    position: relative;
+}
+#categories i.fa {
+    float: right;
+    color: #666;
+    margin-left: 10px;
+    padding-top: 0px;
+}
+#categories b {
+    color:#666;
+    position: absolute;
+    left:10px;
+    top:11px;
+}
+#cssmenu > ul > li > a {
+    color: #fff;
+    margin-top: 0px;
+}
+#cssmenu a {
+    display: block;
+    padding: 15px 5px;
+    color: #666 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#cssmenu > ul > li a:hover {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+#slider{
+    margin-top: 50px;
+}
+.b-img1{
+    margin-top: 50px;
+}
+img{
+    vertical-align: 0;
+}
+.banner3{
+    margin-top: 40px;
+}
+.banner4{
+    margin-top:20px;
+}
+
+
+
+
+
+
+
+.heading-with-border{
+    border-bottom: #d7d7d7;
+    border-radius: 2px;
+    color: #232f3e;
+    font-size: 14pt;
+    padding: 9px 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    min-height: 45px;
+    font-family: IRANSans;
+}
+.product-col{
+    background: white none repeat scroll 0 0;
+    margin-bottom: 5px;
+    padding: 15px 15px 10px;
+    text-align: center;
+    min-height: 350px;
+    position: relative;
+    margin-top: 10px;
+}
+.main-container img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.product-title a{
+    font-size: 8pt;
+    color: #1c1c1c;
+    margin-top: 5px;
+    font-family: IRANSans;
+}
+.product-title a:hover{
+    color: #5c5b5b;
+}
+.product-price{
+    color: red;
+    font-size: 11px;
+    position: absolute;
+    bottom: 60px;
+    left:10px;
+    right: 10px;
+    font-family: IRANSans;
+}
+.product-price del{
+    color: #999;
+}
+.product-col .btn-cart{
+    background: rgba(0,0,0,0) linear-gradient(55deg,#1c1c1c 118px,transparent 117px) repeat scroll 0 0;
+    color: #fff;
+    padding: 6px 15px;
+    border: medium  none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    left:30px;
+    right:50px;
+}
+.product-col .btn-cart:hover{
+    background: rgba(0,0,0,0) linear-gradient(55deg,#ff3c20 118px,transparent 117px) repeat scroll 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
