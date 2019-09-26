@@ -737,7 +737,7 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
     line-height: 1;
 }
 #cssmenu > ul, #cssmenu {
-    width: 90% !important;
+    width: 91% !important;
 }
 #cssmenu ul {
     position: relative;
@@ -884,10 +884,22 @@ z-index: 99;
     color:#ff3c20; 
     padding-bottom:20px; 
 }
+.product-info .add-to-cart{
+box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+padding: 5px 0px 5px 5px;
+border-radius: 5px;
+}
 
+.product-info .add-to-cart:hover{
+    box-shadow: 0 0 6px 0 rgba(255, 0, 0, 0.50);
+    padding: 5px 0px 5px 5px;
+    border-radius: 5px;
+}
 .add-to-cart .fa{
     color:#ff3c20; 
 }
+
+
 
 
 
@@ -910,8 +922,8 @@ width: 100%;
 position: relative;
 margin-bottom: 7px;
 margin-top:15px;
+width: 90%;
 }
-
 .item-info .item-title a{
        color: #222;
        font-size: 16px;
@@ -967,6 +979,12 @@ span.fa-stack {
     font-size: 12px;
     margin-bottom:15px;
 }
+.item-price del{
+    color: #999;
+}
+.item-info {
+font-size: 11px;
+}
 
 
 
@@ -974,7 +992,63 @@ span.fa-stack {
 
 
 
+.block-infos li .inner {
+    padding: 25px 0;
+}
+.block-infos li .inner i {
+    font-size: 30px;
+    padding-top: 8px;
+    width: 50px;
+    float:right;
+    margin-right: 10px;
+    text-align: center;
+}
+.block-infos li .inner {
+padding:12px 0;
+       
+}
+.block-infos {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   width: 250px;
+}
+.info-cont a{
+    color:#222;
+    
+}
+.inner{
+    border-bottom: 1px solid #ebebeb;
+    
+}
+.inner .fa{
+    color:#222;
+}
 
+.info-cont a:hover{
+    color:#ff3c20;
+}
+.inner .fa:hover{
+    color:#ff3c20;    
+}
+
+.blog-title{
+    color:#222;
+    margin-top:15px;
+    margin-bottom:20px; 
+    margin-right:40px;
+    padding-bottom: 20px;
+}
+.blog-title a{
+    color:#222;  
+
+}
+.blog-title .fa{
+    color:#222;
+    
+}
 
 
 
