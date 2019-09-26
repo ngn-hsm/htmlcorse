@@ -1078,3 +1078,47 @@ padding:12px 0;
 .item-new-product span.fa-stack,.item-new-product2 span.fa-stack{
     margin-bottom: 30px;
 }
+
+
+
+
+
+.menu-link{
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+}
+.menu-link .middle-menu li{
+    float: right;
+    width: auto;
+    margin-right: 15px;
+
+}
+.menu-link .middle-menu li a{
+    display: block;
+    padding: 5px;
+    color:#666;
+}
+.menu-link .middle-menu li a:hover{
+    color: #ff3c20;
+}
+#content .container {
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+
+
+
+
+.banners8 .b1,.banners8 .b2{
+    text-align: center;
+    background-color: #f8f8f8;
+    min-height: 210px;
+}
+
+.banners8 .b1 .product-price,.banners8 .b2 .product-price{
+    color: #ff3c20;
+}
+
+
+
