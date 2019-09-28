@@ -1423,3 +1423,19 @@ color:#ff3c20;
 .center{
     text-align: center;
 }
+
+
+.item-new-product{
+position: relative;
+}
+
+
+.btn-nextوbtn-prev{
+    position: absolute;
+}
+.item-new-product .btn-next{
+    top: 50%;
+    right: 0px;
+    position: absolute;
+    display: inline-block;
+}
