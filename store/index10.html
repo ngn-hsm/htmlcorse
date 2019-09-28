@@ -60,6 +60,20 @@
             });
         });
     </script>
+
+<script>
+    $(document).ready(function () {
+        $('.last-product').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: ".btn-prev5",
+            nextArrow: ".btn-next5",
+            rtl: true
+        });
+    });
+</script>
+
     
     
     <script>
@@ -922,14 +936,14 @@
 
 
 
-<div class=" col-sm-12 col-xs-12 pull-right">
+<div class=" col-sm-12 col-xs-12  pull-right">
         <h4 class="modtitle"><strong> آخرین محصولات</strong></h4>
     </div>
     <span class="slick-append" style="margin-left: 35px;">
-        <button class="btn-next-sugested" style="margin-left:5px;display: inline-block;" type="button">
+        <button class="btn-next5" style="margin-left:5px;display: inline-block;" type="button">
             <i class="fa fa-angle-right" style="color:#ccc;"></i>
         </button>
-        <button class="btn-prev-sugested" style="margin-left:5px;display: inline-block;" type="button">
+        <button class="btn-prev5" style="margin-left:5px;display: inline-block;" type="button">
             <i class="fa fa-angle-left" style="color:#ccc;"></i>
         </button>
     </span>
@@ -1555,6 +1569,7 @@
 
                                     </div>
                                 </a>
+
                             </div>
                         </div>
 
@@ -2576,7 +2591,7 @@
                            </div>
 
 
-
+</div>
 
 
                            <div class="clear" style="height:50px"></div>
@@ -2643,8 +2658,66 @@
 
     
 
+</div>
+</div>
 
 
+<div id="so-groups" class="right so-groups-sticky hidden-xs" style="top: 0px">
+    <a class="sticky-categories" data-target="popup" data-popup="#popup-categories"><span>دسته بندی کالا</span><i class="fa fa-align-justify"></i></a>
+        <a class="sticky-mycart" data-target="popup" data-popup="#popup-mycart"><span>کارت</span><i class="fa fa-shopping-cart"></i></a>
+        <a class="sticky-myaccount" data-target="popup" data-popup="#popup-myaccount"><span>حساب کاربری</span><i class="fa fa-user"></i></a>
+        <a class="sticky-mysearch" data-target="popup" data-popup="#popup-mysearch"><span>جستجو</span><i class="fa fa-search"></i></a>
+        <a class="sticky-recent" data-target="popup" data-popup="#popup-recent"><span>آخرین بازدید </span><i class="fa fa-recent"></i></a>
+        <a class="sticky-backtop" data-target="scroll" data-scroll="html"><span>برو بالا</span><i class="fa fa-angle-double-up"></i></a>
+
+
+
+
+<div id="fb-root"></div>
+
+<div class="so-fb-message right-bottom" style="width: 300px">
+<div class="so-fb-ms-inner" style="display: none;">
+    <div class="offline_heading" style="width: 298px">
+        <label class="button_chat_offline_text">چت با ما  </label>
+        <i class="fa fa-angle-down shrink_icon"></i>
+    </div>
+    <div class="fb-page" 
+        data-href="https://www.facebook.com/smartaddons.page" 
+        data-tabs="messages" 
+        data-width="300" 
+        data-height="250" 
+        data-small-header="true" 
+        data-adapt-container-width="true" 
+        data-hide-cover="false" 
+        data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/smartaddons.page" class="fb-xfbml-parse-ignore">
+            <a href="#">پیام facebook</a>
+        </blockquote>
+    </div>
+</div>
+
+<div class="so-fb-ms-bottom so-fb-message-style-default">
+              <div class="so-fb-ms-heading so-fb-message-head">
+          <img class="online" src="img/da.jpg">چت با ما
+                 </div>
+</div>	
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(document).on('click', '.so-fb-ms-bottom', function() {
+        $(this).prev('.so-fb-ms-inner').show();
+        $(this).hide();
+    })
+
+    $(document).on('click', '.offline_heading', function() {
+        $(this).parent('.so-fb-ms-inner').hide();
+        $(this).parent().next('.so-fb-ms-bottom').show();
+    })
+})
+</script>
+
+
+ </div>
 
 
 
@@ -2675,7 +2748,7 @@
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 col_njm1  col-style">
             <div class="box-information box-footer">
 <div class="module clearfix">
-<h3 class="modtitle">اطلاعات</h3>
+<h3 class="modtitle" style="border-bottom: none;">اطلاعات</h3>
 <div class="modcontent">
 <ul class="menu">
 <li><a href="index.php?route=information/information&information_id=4"> درباره ما</a></li>
@@ -2693,7 +2766,7 @@
             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 col_py4d  col-style">
                 <div class="box-account box-footer">
 <div class="module clearfix">
-<h3 class="modtitle">حساب من </h3>
+<h3 class="modtitle"style="border-bottom: none;">حساب من </h3>
 <div class="modcontent">
 <ul class="menu">
 <li><a href="index.php?route=product/manufacturer">برندها</a></li>
@@ -2712,7 +2785,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 col_slxc  col-style">
                  <div class="box-service box-footer">
 <div class="module clearfix">
-<h3 class="modtitle">سرویس</h3>
+<h3 class="modtitle" style="border-bottom: none;">سرویس</h3>
 <div class="modcontent">
 <ul class="menu">
 <li><a href="index.php?route=information/contact">ارتباط با ما</a></li>
@@ -2732,7 +2805,7 @@
 
 <div class="module box-footer so-instagram-gallery-ltr  ">
  
-    <h4 class="modtitle">گالری اینستاگرام </h4>
+    <h4 class="modtitle" style="border-bottom: none;">گالری اینستاگرام </h4>
  
 
             <div class="form-group">
@@ -2844,17 +2917,81 @@
             
 </div>
 
+</div>
+</div>
+</div>
 
+<div class="clear" style="height: 20px"></div>
+<div class="footer-bottom ">
+    <div class="container">
+         
+        <div class="col-lg-12 col-xs-12 payment-w">
+            <img class="lazyload" data-sizes="auto" src="img/payment.jpg" data-src="img/payment.jpg"  alt="imgpayment">
+        </div>
+                </div>
+    <div class="copyright-w">
+        <div class="container">
+            <div class="copyright">
+                                        eMarket © 2019 Demo Store. تمامی حقوق این سایت محفوظ می باشد<a href="http://www.opencartworks.com/" style="color: #ff3c20" target="_blank">OpenCartWorks.Com</a>
+                                </div>
+        </div>
+    </div>
 
-
-<div class="clear" style="height: 50px"></div>
+    
+</div>
+</footer>
 
 
 
                 
 
 
+<div class="so-demos-preview-wrapper">
+    <a class="buy-demo" href="https://1.envato.market/PdbBX">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 415.441 415.441" fill="#81b441" xml:space="preserve">  		<path d="M324.63,22.533C135.173,226.428,80.309,371.638,80.309,371.638c41.149,47.743,111.28,43.72,111.28,43.72 			c73.921,2.31,119.192-43.522,119.192-43.522c91.861-92.516,80.549-355.302,80.549-355.302 			C372.769-23.891,324.63,22.533,324.63,22.533z"></path> 		<path d="M32.369,181.983c0,0-28.983,57.964,18.859,155.495L178.367,58.01C176.916,58.538,63.691,98.037,32.369,181.983z"></path>  </svg> <span> خرید <strong>eMarket</strong></span>
+    </a>
+    <div class="so-show-demos-preview so-show-demos">
+        <span class="so-text-demo">دمو</span>
+        <span class="so-demo-count">23</span>
+    </div>
+    <div class="so-demos-preview">
+        <div class="so-close-demos-preview">بستن</div>
+        <div class="so-demos-tab-wrapper">
+            <div class="so-demos-preview-info">
+                <div class="so-demos-animation-inner">
+                    <h4 class="so-demos-slide-up so-demos-preview-title">eMarket دمو</h4>
+                </div>
+                <div class="so-demos-animation-inner">
+                    <p class="so-demos-slide-up so-demos-preview-text">Check our main demos, layouts, shop and single product pages variants.</p>
+                </div>
+            </div>
+            <div class="so-demo-tabs">
+                <div class="so-preview-loader"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">/*  */
+var plugin_obj = {"ajax_url":"viewstore-ajax.php"};
+/*  */
+</script>
 
+<!-- <div class="back-to-top"><i class="fa fa-angle-up"></i></div>-->
+<div id="previewModal" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title"> Added to cart successfully. What is next?</h4>
+</div>
+<div class="modal-body"></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
 
 
 
