@@ -641,7 +641,7 @@ header .dropdown-menu {
     position: absolute;
     top: 6px;
     left:-40px;
-    color: #ff3c20;
+    color: white;
   
 }
 .like a::after{
@@ -649,10 +649,18 @@ header .dropdown-menu {
     font-family: fontawesome;
     font-size: 25px;
     position: absolute;
-    top: 6px;
-    left: 20px;
-    color: #ff3c20;
+    top: 0px;
+    left: 10px;
+    color: white;
+    border: 1px solid #ff3c20;
+    border-radius: 50%;
+    padding:5px 8px;
+    padding-bottom: 8px;
+    background-color: #ff3c20;
   
+}
+.like .fa:hover{
+   color: #ff3c20 !important;
 }
 .fa-heart{
     position: absolute;
@@ -761,11 +769,18 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
     margin-left: 10px;
     padding-top: 0px;
 }
+#categories i.fa:hover{
+    color: #ff3c20;
+}
+#categories a i.fa:hover{
+    color: #ff3c20;
+}
+
 #categories b {
     color:#666;
     position: absolute;
     left:10px;
-    top:11px;
+    top:14px;
 }
 #cssmenu > ul > li > a {
     color: #fff;
@@ -773,10 +788,11 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
 }
 #cssmenu a {
     display: block;
-    padding: 15px 5px;
+    padding: 10px 5px;
     color: #666 !important;
     text-decoration: none;
     text-transform: uppercase;
+    padding-top: 20px;
 }
 #cssmenu > ul > li a:hover {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
@@ -989,6 +1005,22 @@ font-size: 11px;
 
 
 
+.menu-link .middle-menu{
+    position: relative;
+}
+.menu-link .middle-menu li a::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    left:-750px;
+    top: 57px;
+    transition: all 0.2s ease-out .1s;
+    background-color: #ff3c20;
+}
+
+
+
 
 
 
@@ -1045,6 +1077,9 @@ padding:12px 0;
 .blog-title a{
     color:#222;  
 
+}
+.blog-title a:hover{
+    color: #ff3c20;
 }
 .blog-title .fa{
     color:#222;
@@ -1121,13 +1156,16 @@ padding:12px 0;
 .banners8 .b1 .product-price,.banners8 .b2 .product-price{
     color: #ff3c20;
 }
-
+.banners8 .b1 .product-title a:hover{
+    color: #ff3c20;
+}
 
 
 .item-product3 .product-info{
-    text-align: justify;
+    text-align: center;
     background-color: #f8f8f8;
     min-height: 130px;
+    padding-top: 10px;
 }
 .item-new-product3{
     background-color: #f8f8f8;
@@ -1136,6 +1174,7 @@ padding:12px 0;
 .item-product3 .product-title a{
     font-size: 15px;
 }
+
 
 
 
@@ -1928,7 +1967,7 @@ div.so-groups-sticky.right {
     z-index: 999;
     background: #ff3c20;
         background-color: #ff3c20;
-    width: 50px;
+    width: 46px;
 }
 #so-groups > a {
     position: relative;
@@ -2149,3 +2188,137 @@ div.so-groups-sticky.right {
 
 
 
+
+
+
+
+
+
+#cssmenu ul, #cssmenu ul li, #cssmenu ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cssmenu li {
+    position: relative;
+}
+#cssmenu > ul > li > a {
+    color: #ff3c20;
+    margin-top: 0;
+}
+#cssmenu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#cssmenu ul ul {
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+#cssmenu ul ul {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+#cssmenu ul ul {
+    top: 0;
+    right: 99%;
+}
+#cssmenu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 99%;
+    z-index: 598;
+}
+#cssmenu ul, #cssmenu ul li, #cssmenu ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cssmenu ul {
+    position: relative;
+    z-index: 597;
+    float: right;
+}
+#cssmenu ul ul li {
+    font-weight: normal;
+}
+#cssmenu ul li {
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+    position: relative;
+}
+#cssmenu ul ul li {
+    width: 200px;
+    float: right;
+}
+#cssmenu ul ul ul li {
+    width: 200px;
+    float: right;
+}
+#cssmenu ul ul ul li {
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+    position: relative;
+    padding: 0;
+}
+#cssmenu ul ul ul {
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+#cssmenu ul ul a {
+    font-size: 13px;
+    color: #666;
+}
+#cssmenu ul ul li a:hover{
+    color:#ff3c20;
+}
+#cssmenu a {
+    margin-top: 0;
+}
+#cssmenu a {
+    display: block;
+    padding: 15px 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#cssmenu a:hover{
+    color: #ff3c20 !important;
+}
+
+#cssmenu ul ul {
+    visibility: hidden;
+}
+#cssmenu ul li.hover, #cssmenu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+#cssmenu ul li.hover, #cssmenu ul li:hover {
+    cursor: default;
+}
+#cssmenu > ul > li a:hover {
+    background-color: #fff;
+    color: #ff3c20 !important;
+}
+#cssmenu > ul > li:hover a {
+        background-color: white;
+        color: #ff3c20;
+
+}
+#cssmenu ul li:hover > ul {
+    visibility: visible;
+}
+#cssmenu ul li.hover, #cssmenu ul li:hover {
+    cursor: default;
+}
+#cssmenu ul ul li a:hover{
+    color: #ff3c20;
+}
