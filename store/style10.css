@@ -26,7 +26,7 @@ a:hover{
     text-decoration: none;
 }
 .header{
-    min-height: 220px;
+    min-height: 180px;
     background-color: #232f3e;
     width: 100%;
 }
@@ -35,7 +35,7 @@ a:hover{
     margin-left: 20px;
 }
 .header-top{
-    padding-top:60px; 
+    padding-top:30px; 
 }
 #logo{
     margin-right:30px;
@@ -125,6 +125,7 @@ ul.megamenu li a:hover{
 }
 .main-menu .header-link .container ul li:hover .mega-menu {
     display: block;
+    width: 700px;
 }
 .main-menu .header-link .container .menu-title {
     font-size: 12pt;
@@ -171,7 +172,7 @@ ul.megamenu li a:hover{
 .main-menu .header-link .mega-menu {
     display: none;
     min-height: 150px;
-    min-width: 700px;
+    min-width: 400px;
     position: absolute;
     background-color: white;
     border: 1px solid white;
@@ -818,6 +819,7 @@ img{
 #slider{
     margin-top:50px;
     margin-right:0;
+    box-shadow: none;
 }
 .banner img{
     max-width:97%;
@@ -1005,18 +1007,25 @@ font-size: 11px;
 
 
 
-.menu-link .middle-menu{
+.menu-link .middle-menu li a{
     position: relative;
 }
-.menu-link .middle-menu li a::after {
+.menu-link .middle-menu li span::after {
     position: absolute;
     content: "";
-    width: 60px;
+    width: 0;
+    left:0;
+    bottom: -5px;
     height: 2px;
-    left:-750px;
-    top: 57px;
-    transition: all 0.2s ease-out .1s;
+    transition: all 0.2s ease-in-out 0s;
     background-color: #ff3c20;
+}
+.menu-link .middle-menu li span:hover::after {
+    width: 100%;
+
+}
+.menu-link .middle-menu li h3 span:hover::after {
+    width: 0;
 }
 
 
