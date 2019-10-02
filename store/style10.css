@@ -35,7 +35,11 @@ a:hover{
     margin-left: 20px;
 }
 .header-top{
-    padding-top:30px; 
+    padding-top:40px; 
+}
+.header-bottom{
+    margin-right: 20px;
+    margin-top:15px;
 }
 #logo{
     margin-right:30px;
@@ -101,7 +105,7 @@ ul.megamenu li a:hover{
     font-size: 12px;
     position: absolute;
     top: 7px;
-    left: 15px;
+    left: 28px;
     color: white;
 }
 
@@ -568,7 +572,7 @@ header .dropdown-menu {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    padding: 0 35px;
+    padding: 0 25px;
     font-size: 14px;
     color: #fff;
     border-radius: 0;
@@ -671,63 +675,26 @@ header .dropdown-menu {
 }
 
 
-.chain{
-    position: relative;
-    text-align: center;
-}
-.fa-chain{
-    transform: rotate(44deg);
-    color: #e5e5e5;
-}
-
-.chain-right{
+.header .chain-right::before{
+    background-image: url(img/icon-tit.jpg);
+    bottom: -26px;
+    content: "";
+    height: 32px;
+    left: -10px;
     position: absolute;
-    right: -8px;
-    top: -5px;
+    width: 5px;
+    z-index: 99;
 }
-.chain-left{
+.header .chain-right:after{
+    background-image: url(img/icon-tit.jpg);
+    bottom: -26px;
+    content: "";
+    height: 32px;
+    right: 4px;
     position: absolute;
-    left: 70px;
-    top: -5px;
+    width: 5px;
+    z-index: 99;
 }
-.chain-right::before{
-    content: "\f111";
-    font-family: fontawesome;
-    font-size: 9px;
-    position: absolute;
-    top: -13px;
-    right: 14px;
-    color: #e5e5e5;
-}
-.chain-right::after{
-    content: "\f111";
-    font-family: fontawesome;
-    font-size: 9px;
-    position: absolute;
-    top: -13px;
-    right: 200px;
-    color: #e5e5e5;
-}
-.chain-left::before{
-    content: "\f111";
-    font-family: fontawesome;
-    font-size: 9px;
-    position: absolute;
-    bottom: -11px;
-    right:-175px;
-    color: #232f3e;
-}
-
-.chain-left::after{
-    content: "\f111";
-    font-family: fontawesome;
-    font-size: 9px;
-    position: absolute;
-    bottom: -11px;
-    left: 15px;
-    color: #232f3e;
-}
-
 
 
 
@@ -746,7 +713,7 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
     line-height: 1;
 }
 #cssmenu > ul, #cssmenu {
-    width: 90% !important;
+    width:88% !important;
 }
 #cssmenu ul {
     position: relative;
