@@ -26,7 +26,7 @@ a:hover{
     text-decoration: none;
 }
 .header{
-    min-height: 180px;
+    min-height: 170px;
     background-color: #232f3e;
     width: 100%;
 }
@@ -35,15 +35,17 @@ a:hover{
     margin-left: 20px;
 }
 .header-top{
-    padding-top:40px; 
+    padding-top:30px; 
 }
 .header-bottom{
     margin-right: 20px;
     margin-top:15px;
 }
 #logo{
-    margin-right:30px;
     margin-top: 10px;
+}
+.img-responsive{
+    margin-right: 50px;
 }
 .header-link{
     font-size: 15px;
