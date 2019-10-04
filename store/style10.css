@@ -763,10 +763,138 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
     text-decoration: none;
     text-transform: uppercase;
     padding-top: 20px;
+    transform:scale(1s)
 }
 #cssmenu > ul > li a:hover {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+#cssmenu .submenu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    min-width: 800px;
+    background-color: white;
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+    z-index: 998;
+    display: none;
+}
+#cssmenu .submenu  .main-menu{
+  color: #666 !important;
+}
+
+
+
+
+
+
+
+.item .image .button-group { 
+   padding: 0;
+position: absolute;
+z-index: 99;
+left: 10px;
+bottom: 35px;
+}
+.item:hover .product-thumb .grade-wrapper .button-group .btn-button {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+}
+.item .grade-wrapper .button-group .btn-button:hover {
+    background-color: #ff3c20;
+    width: auto;
+}
+.item .grade-wrapper .button-group .btn-button.addToCart {
+    transition-delay: 0.1s;
+}
+.item .grade-wrapper .button-group .btn-button {
+    border: none;
+    display: block;
+    margin-top: 5px;
+    padding: 0;
+    background-color: #666;
+    border-radius: 3px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transform: all 0.3s ease 0s;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+        transition-delay: 0s;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-transform: translate(-50px, 0px);
+    -moz-transform: translate(-50px, 0px);
+    -ms-transform: translate(-50px, 0px);
+    -o-transform: translate(-50px, 0px);
+    transform: translate(-50px, 0px);
+}
+.item .grade-wrapper .button-group .btn-button:hover i {
+    color: #fff;
+}
+.item .grade-wrapper .button-group .btn-button i,.item .grade-wrapper .button-group .btn-button::before {
+    font-size: 12px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+}
+.fa-shopping-basket::before {
+    content: "\f291";
+}
+.fa-heart::before {
+    content: "\f004";
+}
+.fa-refresh::before {
+    content: "\f021";
+}
+.fa-eye::before {
+    content: "\f06e";
+}
+
+.item .grade-wrapper .button-group .btn-button.wishlist {
+    margin-bottom: 0;
+    transition-delay: 0.2s;
+}
+.item .grade-wrapper .button-group .btn-button.compare {
+    margin-bottom: 0;
+    transition-delay: 0.3s;
+}
+.item .grade-wrapper .button-group .btn-button.quickview {
+    transition-delay: 0.4s;
+}
+.item .grade-wrapper .button-group .btn-button:hover span {
+    opacity: 1;
+    padding: 0 10px 0 28px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2361,7 +2489,6 @@ div.so-groups-sticky.right {
     padding: 0;
 }
 #cssmenu ul {
-    position: relative;
     z-index: 597;
     float: right;
 }
@@ -2372,7 +2499,6 @@ div.so-groups-sticky.right {
     min-height: 1px;
     line-height: 1em;
     vertical-align: middle;
-    position: relative;
 }
 #cssmenu ul ul li {
     width: 200px;
@@ -2386,7 +2512,6 @@ div.so-groups-sticky.right {
     min-height: 1px;
     line-height: 1em;
     vertical-align: middle;
-    position: relative;
     padding: 0;
 }
 #cssmenu ul ul ul {
@@ -2420,7 +2545,6 @@ div.so-groups-sticky.right {
     visibility: hidden;
 }
 #cssmenu ul li.hover, #cssmenu ul li:hover {
-    position: relative;
     z-index: 599;
     cursor: default;
 }
@@ -2445,3 +2569,8 @@ div.so-groups-sticky.right {
 #cssmenu ul ul li a:hover{
     color: #ff3c20;
 }
+
+
+
+
+
