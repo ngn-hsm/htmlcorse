@@ -910,144 +910,69 @@ img{
     margin-bottom: 20px;
 }
 .banners6 a:before{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width:100%;
+    height: 100%;
+
     top: 0;
-    right: 50%;
+    left: 0;
+    position: absolute;
     content: "";
-    transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s;
 } 
 .banners6 a:hover:before{
-    width: 100%;
-    top: 0px;
-    height: 100%;
-    right: 0;
+    width: 0;
+    top: 0;
+    left: 50%;
 }
 .banners3 a:before{
+    background-color: rgba(0, 0, 0, 0.2);
+    width:0;
+    left: 50%;
+    top: 0;
     position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 35px;
-    right: 50%;
     content: "";
-    transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s;
 } 
 .banners3 a:hover:before{
-    width: 97%;
+    width:97%;
     top: 35px;
+    left: 30px;
     height: 43px;
-    right: 0;
+
+
 }
 .banner4 a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 0;
-    top: 20px;
-    right: 50%;
+    top: 0;
+    left: 50%;
+    position: absolute;
     content: "";
-    transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s;
 }
 .banner4 a:hover:before{
     width: 74%;
+    height: 91%;
     top: 20px;
-    height: 90%;
-    right: 25px;
+    left: 61px;
+
 }
 .banner5 a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 0;
     top: 0;
-    right: 50%;
+    left: 50%;
+    position: absolute;
     content: "";
-    transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s;
 }
 .banner5 a:hover::before {
     width: 81%;
-    top: 0;
     height: 100%;
-    right: 15px;
+    top: 0px;
+    left: 43px;
 }
-.banner1 .b1 a::before,.banner3 .b1 a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 0;
-    right: 50%;
-    content: "";
-    transition: all 0.5s ease-in-out 0s;
-}
-.banner1 .b1 a:hover::before,.banner3 .b1 a:hover::before {
-    width: 100%;
-    top: 0;
-    height: 49%;
-    right: 0px;
-}
-.banner1 .b2 a::before,.banner3 .b2 a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 51%;
-    right: 50%;
-    content: "";
-    transition: all 0.5s ease-in-out 0s;
-}
-.banner1 .b2 a:hover::before,.banner3 .b2 a:hover::before {
-    width: 100%;
-    top: 51%;
-    height: 49%;
-    right: 0px;
-}
-.banner10  a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 0;
-    right: 50%;
-    content: "";
-    transition: all 0.5s ease-in-out 0s;
-}
-.banner10  a:hover::before {
-    width: 94%;
-    top: 0;
-    height: 100%;
-    right: 15px;
-}
-.banner1 a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 50px;
-    right: 50%;
-    content: "";
-    transition: all 0.5s ease-in-out 0s;
-}
-.banner1 a:hover::before {
-    width: 85%;
-    top: 50px;
-    height: 41%;
-    right: 15px;
-}
-.banner2  a::before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    width: 0;
-    top: 59%;
-    right: 50%;
-    content: "";
-    transition: all 0.5s ease-in-out 0s;
-}
-.banner2  a:hover::before {
-    width: 85%;
-    top:59%;
-    height: 41%;
-    right: 15px;
-}
-
-
-
-
 
 
 
