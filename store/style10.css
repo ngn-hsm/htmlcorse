@@ -772,20 +772,55 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
 
 
 
-#cssmenu .submenu{
+.submenu{
     position: absolute;
     top: 0;
     right: 100%;
-    min-width: 800px;
+    left: 0;
+    min-width: 720px;
     background-color: white;
     border: 1px solid #fff;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
     z-index: 998;
     display: none;
 }
-#cssmenu .submenu  .main-menu{
-  color: #666 !important;
+#content .submenu:hover{
+    visibility: visible;
+    display: inline-block;
+    width: 710px;
 }
+#content .submenu ul li a{
+    font-size: 13px;
+    display: block;
+    padding-top: 10px;
+    box-shadow: none !important;
+}
+.submenu ul li a:hover{
+    color: #ff3c20 !important;
+}
+#content .submenu .main-menu{
+font-size: 17px;
+color:#222 !important;
+padding-top: 30px;
+}
+.submenu .main-menu:hover{
+ color: #222 !important;
+}
+.submenu ul li{
+    display: inline;
+}
+#content a:hover{
+    color: #ff3c20 !important;
+}
+#content .submenu .vbanner{
+    box-shadow: none !important;
+    padding-bottom: 0;
+}
+
+
+
+
+
 
 
 
@@ -918,7 +953,7 @@ img{
     left: 0;
     position: absolute;
     content: "";
-    transition: all 0.3 ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s !important;
 } 
 .banners6 a:hover:before{
     width: 0;
@@ -932,7 +967,7 @@ img{
     top: 0;
     position: absolute;
     content: "";
-    transition: all 0.3 ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s !important;
 } 
 .banners3 a:hover:before{
     width:97%;
@@ -949,7 +984,7 @@ img{
     left: 50%;
     position: absolute;
     content: "";
-    transition: all 0.3 ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s !important;
 }
 .banner4 a:hover:before{
     width: 74%;
@@ -965,7 +1000,7 @@ img{
     left: 50%;
     position: absolute;
     content: "";
-    transition: all 0.3 ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s !important;
 }
 .banner5 a:hover::before {
     width: 81%;
@@ -2369,131 +2404,6 @@ div.so-groups-sticky.right {
 
 
 
-
-#cssmenu ul, #cssmenu ul li, #cssmenu ul ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#cssmenu li {
-    position: relative;
-}
-#cssmenu > ul > li > a {
-    color: #ff3c20;
-    margin-top: 0;
-}
-#cssmenu a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#cssmenu ul ul {
-    border: 1px solid #fff;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
-}
-#cssmenu ul ul {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
-}
-#cssmenu ul ul {
-    top: 0;
-    right: 99%;
-}
-#cssmenu ul ul {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 99%;
-    z-index: 598;
-}
-#cssmenu ul, #cssmenu ul li, #cssmenu ul ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#cssmenu ul {
-    z-index: 597;
-    float: right;
-}
-#cssmenu ul ul li {
-    font-weight: normal;
-}
-#cssmenu ul li {
-    min-height: 1px;
-    line-height: 1em;
-    vertical-align: middle;
-}
-#cssmenu ul ul li {
-    width: 200px;
-    float: right;
-}
-#cssmenu ul ul ul li {
-    width: 200px;
-    float: right;
-}
-#cssmenu ul ul ul li {
-    min-height: 1px;
-    line-height: 1em;
-    vertical-align: middle;
-    padding: 0;
-}
-#cssmenu ul ul ul {
-    border: 1px solid #fff;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
-}
-
-
-#cssmenu ul ul a {
-    font-size: 13px;
-    color: #666;
-}
-#cssmenu ul ul li a:hover{
-    color:#ff3c20;
-}
-#cssmenu a {
-    margin-top: 0;
-}
-#cssmenu a {
-    display: block;
-    padding: 15px 20px;
-    padding-top: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#cssmenu a:hover{
-    color: #ff3c20 !important;
-}
-
-#cssmenu ul ul {
-    visibility: hidden;
-}
-#cssmenu ul li.hover, #cssmenu ul li:hover {
-    z-index: 599;
-    cursor: default;
-}
-#cssmenu ul li.hover, #cssmenu ul li:hover {
-    cursor: default;
-}
-#cssmenu > ul > li a:hover {
-    background-color: #fff;
-    color: #ff3c20 !important;
-}
-#cssmenu > ul > li:hover a {
-        background-color: white;
-        color: #ff3c20;
-
-}
-#cssmenu ul li:hover > ul {
-    visibility: visible;
-}
-#cssmenu ul li.hover, #cssmenu ul li:hover {
-    cursor: default;
-}
-#cssmenu ul ul li a:hover{
-    color: #ff3c20;
-}
 
 
 
