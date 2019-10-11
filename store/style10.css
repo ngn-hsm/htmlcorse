@@ -1627,7 +1627,7 @@ body.layout-2 .container, body.layout-1 .container {
     font-size: 40px;
     position: absolute;
     top: 5px;
-    left:60px;
+    left:80px;
 }
 
 .typefooter-1 .newsletter-footer1 .newsletter .block_content form.signup .subcribe button {
@@ -1720,14 +1720,17 @@ color:#ff3c20;
 .fa-twitter::before {
     content: "\f099";
 }
-.typefooter-1 .socials li::before {
+/* .typefooter-1 .socials li::after {
     background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
     content: "";
     height: 10px;
     position: absolute;
-    left: 0;
+    left: 50px;
     top: 8px;
     width: 1px;
+} */
+.typefooter-1 .socials .fa{
+    color: white;
 }
 
 
@@ -1967,8 +1970,6 @@ ul, ul.menu, ol.menu, ul.blank, .our-member .respl-item .info-member ul, .why-li
 .typefooter-1 .footer-bottom {
     text-align: center;
     color: #fff;
-    padding-top: 40px;
-
 }
 .typefooter-1 .copyright-w {
     background-color: #232f3e;
@@ -2256,11 +2257,7 @@ div.so-groups-sticky.right {
     z-index: 999;
     background: #ff3c20;
         background-color: #ff3c20;
-    width: 46px;
-}
-#so-groups > a {
-    position: relative;
-    height: 43px;
+    width: 40px;
 }
 #so-groups > a {
     float: left;
@@ -2302,11 +2299,7 @@ div.so-groups-sticky.right {
 #so-groups > a > i {
     font-size: 20px;
 }
-#so-groups > a {
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-}
+
 #so-groups > a {
     position: relative;
     height: 43px;
@@ -2492,9 +2485,96 @@ div.so-groups-sticky.right {
 }
 
 
+.grade-wrapper .button-group{
+    opacity: 0;
+}
+.button-group .btn-button.addToCart{
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    z-index: 999;
+    background: #888888;
+        background-color: #888888;
+    width: 40px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+}
+.grade-wrapper .button-group:hover{
+    opacity: 1;
+cursor: pointer;
+
+}
+.button-group .btn-button.recent{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    z-index: 999;
+    background: #888888;
+        background-color: #888888;
+    width: 40px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+
+}
+.button-group .btn-button.compare{
+    position: absolute;
+    left: 15px;
+    top: 60px;
+    z-index: 999;
+    background: #888888;
+        background-color: #888888;
+    width: 40px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+
+}
+.fa-heart::before {
+    content: "\f004";
+}
+.button-group i.fa{
+    text-align: center;
+    color: white;
+}
 
 
 
 
-
-
+.footer-links {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
+}
+.footer-links {
+    border-top: 1px solid #ebebeb;
+    padding: 46px 5% 15px 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    margin-top: 30px;
+    text-align: center;
+}
+.footer-links li {
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    vertical-align: top;
+    padding: 0 15px;
+    line-height: 100%;
+}
+.footer-links li::before {
+    background: #666 none repeat scroll 0 0;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+}
+.footer-links a{
+color: #666666;
+}
+.footer-links a:hover{
+    color: #ff3c20;
+}
