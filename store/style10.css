@@ -1092,6 +1092,8 @@ img{
 
 
 
+
+
 #slider{
     margin-top:50px;
     margin-right:0;
@@ -1177,7 +1179,7 @@ z-index: 99;
 
 .product-info .product-price{
     color:#ff3c20; 
-    padding-bottom:20px; 
+    padding-bottom:10px; 
 }
 .product-info .add-to-cart{
 box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
@@ -1186,9 +1188,10 @@ border-radius: 5px;
 }
 
 .product-info .add-to-cart:hover{
-    box-shadow: 0 0 6px 0 rgba(255, 0, 0, 0.50);
+    box-shadow: 0 0 7px 0 rgba(146, 129, 129, 0.5);
     padding: 5px 0px 5px 5px;
     border-radius: 5px;
+    color: #eaeaea;
 }
 .add-to-cart .fa{
     color:#ff3c20; 
@@ -2474,8 +2477,19 @@ div.so-groups-sticky.right {
 
 
 
-
-
+.daily span{
+    border: 1px solid#f0eeee;
+    background-color: #f0eeee;
+    color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 3% 3%;
+}
+.daily-p{
+    margin-left: 50px;
+    font-size: 10px;
+    margin-top: -8px;
+}
 
 
 
