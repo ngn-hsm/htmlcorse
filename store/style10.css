@@ -944,7 +944,6 @@ img{
     margin-right: 20px;
     margin-bottom: 20px;
 }
-<<<<<<< HEAD
 .banners6 a:before{
     position: absolute;
     background: rgba(0, 0, 0, 0.2);
@@ -952,11 +951,7 @@ img{
     top: 0;
     right: 50%;
     content: "";
-<<<<<<< HEAD
-    transition: all 0.3 ease-in-out 0s !important;
-=======
     transition: all 0.5s ease-in-out 0s;
->>>>>>> parent of 062fd37... Revert "atkmile hover banner"
 } 
 .banners6 a:hover:before{
     width: 100%;
@@ -971,11 +966,7 @@ img{
     top: 35px;
     right: 50%;
     content: "";
-<<<<<<< HEAD
-    transition: all 0.3 ease-in-out 0s !important;
-=======
     transition: all 0.5s ease-in-out 0s;
->>>>>>> parent of 062fd37... Revert "atkmile hover banner"
 } 
 .banners3 a:hover:before{
     width: 97%;
@@ -990,17 +981,13 @@ img{
     top: 20px;
     right: 50%;
     content: "";
-<<<<<<< HEAD
-    transition: all 0.3 ease-in-out 0s !important;
-=======
     transition: all 0.5s ease-in-out 0s;
->>>>>>> parent of 062fd37... Revert "atkmile hover banner"
 }
 .banner4 a:hover:before{
     width: 74%;
     top: 20px;
     height: 90%;
-    right: 25px;
+    right: 36px;
 }
 .banner5 a::before {
     position: absolute;
@@ -1009,11 +996,7 @@ img{
     top: 0;
     right: 50%;
     content: "";
-<<<<<<< HEAD
-    transition: all 0.3 ease-in-out 0s !important;
-=======
     transition: all 0.5s ease-in-out 0s;
->>>>>>> parent of 062fd37... Revert "atkmile hover banner"
 }
 .banner5 a:hover::before {
     width: 81%;
@@ -1105,8 +1088,6 @@ img{
 
 
 
-=======
->>>>>>> parent of 35bb8e0... store kamel hover 3 banner
 
 
 
