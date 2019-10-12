@@ -942,7 +942,7 @@ img{
 .banner4{
     margin-top:20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .banners6 a:before{
     position: absolute;
@@ -1213,7 +1213,7 @@ text-transform: uppercase;
 background-color: transparent;
 padding: 0;
 padding-bottom: 8px;
-bottom: 0;
+bottom: 10px;
 border-bottom: 2px solid #eee;
 display: inline-block;
 width: 100%;
@@ -1936,7 +1936,7 @@ ul, ul.menu, ol.menu, ul.blank, .our-member .respl-item .info-member ul, .why-li
     content: "\f095";
     font-size: 20px;
     position: absolute;
-    top: 158px;
+    top: 140px;
     right: 0;
 
 }
@@ -1945,7 +1945,7 @@ ul, ul.menu, ol.menu, ul.blank, .our-member .respl-item .info-member ul, .why-li
     content: "\f017";
     font-size: 20px;
     position: absolute;
-    top: 230px;
+    top: 215px;
     right: 0;
 }
 .infos-footer .adres::before{
@@ -1961,7 +1961,7 @@ ul, ul.menu, ol.menu, ul.blank, .our-member .respl-item .info-member ul, .why-li
     content: "\f025";
     font-size: 20px;
     position: absolute;
-    top: 188px;
+    top: 176px;
     right: 0;
 }
 
